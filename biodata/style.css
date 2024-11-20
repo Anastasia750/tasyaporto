@@ -1,0 +1,310 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #fff4e6; /* Cream */
+    color: #4a2c2a; /* Dark Brown */
+    scroll-behavior: smooth;
+}
+
+/* Header Section */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #8b0000; /* Red */
+    color: #f5f5dc; /* Beige */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #f5f5dc; /* Beige */
+    text-decoration: none;
+}
+
+header .navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+header .navbar a {
+    color: #f5f5dc; /* Beige */
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+header .navbar a:hover {
+    color: #ffdab9; /* Lighter Cream */
+}
+
+header .top-btn a {
+    background: #f5f5dc; /* Beige */
+    color: #8b0000; /* Red */
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+header .top-btn a:hover {
+    background: #ffdab9; /* Lighter Cream */
+    color: #8b0000;
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 20px;
+    background: #ffe4c4; /* Light Cream */
+    min-height: 100vh;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+.home-content h1 {
+    font-size: 36px;
+    color: #8b0000; /* Red */
+    margin-bottom: 10px;
+}
+
+.home-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #4a2c2a; /* Dark Brown */
+}
+
+.home-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px 0;
+    color: #4a2c2a; /* Dark Brown */
+}
+
+.home-content .btn {
+    background: #8b0000; /* Red */
+    color: #f5f5dc; /* Beige */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.home-content .btn:hover {
+    background: #ffdab9; /* Lighter Cream */
+    color: #8b0000;
+}
+
+.home-img img {
+    width: 400px;
+    border-radius: 50%;
+    border: 5px solid #ffdab9; /* Lighter Cream */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 20px;
+    background: #fff4e6; /* Cream */
+    min-height: 100vh;
+}
+
+.about-content {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #8b0000; /* Red */
+}
+
+.about-content p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #4a2c2a; /* Dark Brown */
+    margin-bottom: 20px;
+}
+
+.about-content .btn {
+    background: #8b0000; /* Red */
+    color: #f5f5dc; /* Beige */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.about-content .btn:hover {
+    background: #ffdab9; /* Lighter Cream */
+    color: #8b0000;
+}
+
+.about-img img {
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 80px 20px;
+    background: #ffe4c4; /* Light Cream */
+}
+
+.portfolio .heading {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #8b0000; /* Red */
+}
+
+.portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Portfolio Rows */
+.portfolio-content .row {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-content .row:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio Images */
+.portfolio-content .row img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hover Effect on Images */
+.portfolio-content .row:hover img {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* Row Text */
+.portfolio-content h5 {
+    font-size: 18px;
+    color: #8b0000; /* Red */
+    margin-bottom: 5px;
+}
+
+.portfolio-content h4 {
+    font-size: 16px;
+    color: #4a2c2a; /* Dark Brown */
+}
+
+
+/* Contact Section */
+.contact {
+    padding: 80px 20px;
+    background: #fff4e6; /* Cream */
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #8b0000; /* Red */
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact .input-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.contact .btn {
+    background: #8b0000; /* Red */
+    color: #f5f5dc; /* Beige */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+.contact .btn:hover {
+    background: #ffdab9; /* Lighter Cream */
+    color: #8b0000;
+}
+
+/* Footer */
+.footer {
+    background: #8b0000; /* Red */
+    color: #f5f5dc; /* Beige */
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer .social a {
+    color: #f5f5dc; /* Beige */
+    margin: 0 10px;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer .social a:hover {
+    color: #ffdab9; /* Lighter Cream */
+}
